@@ -53,9 +53,7 @@ const Login = () => {
   return (
     <dialog id="my_modal_3" className="modal">
       <div className="modal-box">
-        {/*  method="dialog" removed */}
         <form onSubmit={onSubmitHandler}>
-          {/* Close */}
           <button
             type="button"
             className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
@@ -66,7 +64,6 @@ const Login = () => {
 
           <h1 className="text-3xl font-bold text-center mb-4">Login</h1>
 
-          {/* Email */}
           <label className="text-sm font-medium text-gray-600">Email</label>
           <input
             onChange={handleChange}
@@ -74,13 +71,11 @@ const Login = () => {
             name="email"
             value={user.email}
             className="mt-2 w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500"
-            
           />
           {errors.email && (
             <p className="text-red-500 text-sm">{errors.email.message}</p>
           )}
 
-          {/* Password */}
           <label className="text-sm font-medium text-gray-600 mt-4 block">
             Password
           </label>
@@ -92,7 +87,6 @@ const Login = () => {
               onChange={handleChange}
               value={user.password}
               className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500"
-  
             />
 
             <button
@@ -117,7 +111,6 @@ const Login = () => {
             </button>
           </div>
 
-          {/* Submit */}
           <button
             type="submit"
             className="w-full bg-blue-800 text-white py-3 rounded-md hover:bg-blue-700 mt-4"

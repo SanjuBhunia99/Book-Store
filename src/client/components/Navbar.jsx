@@ -103,11 +103,6 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="flex items-center">
-              {/* <img
-                src="../assets/logo.png"
-                alt="Logo"
-                className="h-12 w-12 rounded-full object-cover ml-3"
-              /> */}
               <img
                 src={logo}
                 alt="Logo"
@@ -116,7 +111,7 @@ const Navbar = () => {
             </div>
             <a className="text-2xl font-bold cursor-pointer ml-4">Book Store</a>
           </div>
-          {/* Searching */}
+
           <div className="navbar-end space-x-3">
             <div className="navbar-center hidden lg:flex">
               {isLoggedIn && navItems}

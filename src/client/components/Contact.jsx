@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPhoneAlt,FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -22,13 +22,16 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:8082/api/v1/user/contact/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const res = await fetch(
+        "http://localhost:8082/api/v1/user/contact/send",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await res.json();
       alert(data.message);
@@ -44,13 +47,10 @@ const Contact = () => {
       <Navbar />
 
       <div className="min-h-screen bg-gray-50 px-4 py-6 md:px-20">
-        {/* Header */}
         <div className="flex items-center gap-3 mb-6">
           <button className="text-xl">←</button>
           <h1 className="text-xl font-semibold mx-auto">Contact Us</h1>
         </div>
-
-        {/* Contact Form */}
         <div className="flex justify-center">
           <div className="w-full max-w-md">
             <h2 className="text-xl font-semibold mb-4 text-center">
@@ -110,8 +110,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-
-        {/* Contact Actions */}
         <div className="flex justify-around md:justify-center md:gap-16 mt-10 mb-8">
           <a
             href="tel:+919775638730"
@@ -132,18 +130,17 @@ const Contact = () => {
             <p className="mt-2 text-sm font-medium">Email</p>
           </a>
 
-            <a
-              href="https://wa.me/919775638730?text=Hello%20I%20want%20to%20contact%20you"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex flex-col items-center cursor-pointer hover:scale-105 transition"
-            >
-              <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-2xl text-white">
-                <FaWhatsapp />
-              </div>
-              <p className="mt-2 text-sm font-medium">WhatsApp</p>
-            </a>
-          
+          <a
+            href="https://wa.me/919775638730?text=Hello%20I%20want%20to%20contact%20you"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center cursor-pointer hover:scale-105 transition"
+          >
+            <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-2xl text-white">
+              <FaWhatsapp />
+            </div>
+            <p className="mt-2 text-sm font-medium">WhatsApp</p>
+          </a>
         </div>
       </div>
 

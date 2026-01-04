@@ -39,7 +39,6 @@ const FreeBook = () => {
 
   return (
     <div className="max-w-screen-2xl container mx-auto px-4 py-8">
-      {/* Header */}
       <div className="mb-6 text-center md:text-left">
         <h1 className="font-semibold text-2xl pb-2">Free Offered Courses</h1>
         <p className="text-gray-600 max-w-xl">
@@ -48,7 +47,6 @@ const FreeBook = () => {
         </p>
       </div>
 
-      {/* Slider */}
       <Slider {...settings}>
         {filterData.map((item) => (
           <div key={item.id} className="px-3 py-6">

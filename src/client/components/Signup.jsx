@@ -48,11 +48,10 @@ const Signup = () => {
 
   return (
     <div className="flex justify-center mt-12">
-      <div className="w-[400px] p-6 rounded-lg shadow-md bg-gray-300">
+      <div className="w-100 p-6 rounded-lg shadow-md bg-gray-300">
         <form onSubmit={onSubmitHandler}>
           <h1 className="text-3xl font-bold mb-2">Create Your Account</h1>
 
-          {/* Full Name */}
           <label className="text-sm font-medium">Full Name</label>
           <input
             type="text"
@@ -63,7 +62,6 @@ const Signup = () => {
             required
           />
 
-          {/* Email */}
           <label className="text-sm font-medium mt-3 block">Email</label>
           <input
             type="email"
@@ -74,7 +72,6 @@ const Signup = () => {
             required
           />
 
-          {/* Password */}
           <label className="text-sm font-medium mt-3 block">Password</label>
           <div className="relative">
             <input
@@ -94,7 +91,6 @@ const Signup = () => {
             </button>
           </div>
 
-          {/* Confirm Password */}
           <label className="text-sm font-medium mt-3 block">
             Confirm Password
           </label>
@@ -116,7 +112,6 @@ const Signup = () => {
             </button>
           </div>
 
-          {/* Submit */}
           <button
             type="submit"
             className="w-full bg-blue-600 text-white py-3 rounded-lg mt-4 hover:bg-blue-700 cursor-pointer"

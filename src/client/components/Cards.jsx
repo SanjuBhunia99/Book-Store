@@ -14,7 +14,6 @@ const Cards = ({ item }) => {
         hover:scale-105
       "
     >
-      {/* Image */}
       <img
         src={item.image}
         alt={item.name}
