@@ -3,7 +3,8 @@ import axios from "axios";
 let accessToken = null;
 
 const api = axios.create({
-  baseURL: "http://localhost:8082/",
+  baseURL: import.meta.env.VITE_API_URL,
+  // baseURL: "http://localhost:8082/",
   withCredentials: true,
 });
 
