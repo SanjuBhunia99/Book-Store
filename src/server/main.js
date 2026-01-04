@@ -40,7 +40,7 @@ app.get(/.*/, (req, res) => {
 });
 
 
-ViteExpress.listen(app, PORT, () => {
+app.listen(app, PORT, () => {
   connectDB();
   console.log(`Server is listening on port ${PORT}`);
 });
