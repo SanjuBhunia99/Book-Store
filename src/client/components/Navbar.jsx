@@ -4,8 +4,9 @@ import { GrLogout } from "react-icons/gr";
 import { useCart } from "../context/CartContext";
 // import Logout from "./Logout";
 // import { useAuth } from "../context/AuthProvider";
-import { NavLink , Link} from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const { cartItems } = useCart();
@@ -102,8 +103,13 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="flex items-center">
+              {/* <img
+                src="../assets/logo.png"
+                alt="Logo"
+                className="h-12 w-12 rounded-full object-cover ml-3"
+              /> */}
               <img
-                src="/public/logo.png"
+                src={logo}
                 alt="Logo"
                 className="h-12 w-12 rounded-full object-cover ml-3"
               />
@@ -142,16 +148,16 @@ const Navbar = () => {
               </label>
             </div>
             <div className="flex-none">
-        <Link to="/cart" className="relative">
-          🛒
-          {cartItems.length > 0 && (
-            <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs rounded-full px-2">
-              {cartItems.length}
-            </span>
-          )}
-        </Link>
-      </div>
-           <div className="">
+              <Link to="/cart" className="relative">
+                🛒
+                {cartItems.length > 0 && (
+                  <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs rounded-full px-2">
+                    {cartItems.length}
+                  </span>
+                )}
+              </Link>
+            </div>
+            <div className="">
               {isLoggedIn ? (
                 <GrLogout
                   className="text-2xl cursor-pointer"
