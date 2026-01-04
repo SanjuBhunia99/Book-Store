@@ -1,4 +1,3 @@
-
 import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
@@ -29,7 +28,8 @@ app.use(cors());
 app.use("/api/v1/book", bookRoute);
 app.use("/api/v1/admin", AdminRoute);
 app.use("/api/v1/users", userRoute);
-app.use("/api/v1/user/contact", contactRoute);
+app.use("/api/v1/users/contact", contactRoute);
+
 app.get("/sendMail", sendMail);
 
 const clientPath = path.join(__dirname, "../client/dist");
