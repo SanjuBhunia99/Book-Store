@@ -40,7 +40,8 @@ app.get(/.*/, (req, res) => {
 });
 
 
-app.listen(app, PORT, () => {
+
+app.listen(PORT, "0.0.0.0", () => {
   connectDB();
   console.log(`Server is listening on port ${PORT}`);
 });
