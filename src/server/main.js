@@ -1,6 +1,5 @@
 
 import express from "express";
-import ViteExpress from "vite-express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import connectDB from "./config/database.js";
