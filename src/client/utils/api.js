@@ -4,7 +4,7 @@ let accessToken = null;
 
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
-  // baseURL: "http://localhost:8082/",
+  baseURL: "http://localhost:8082/",
   withCredentials: true,
 });
 
