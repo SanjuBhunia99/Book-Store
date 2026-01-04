@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Eloquent JavaScript",
+    "title": "A Modern Introduction to Programming",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=Eloquent+JS"
+  },
+  {
+    "id": 2,
+    "name": "You Don't Know JS",
+    "title": "JavaScript Scope & Closures",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=You+Dont+Know+JS"
+  },
+  {
+    "id": 3,
+    "name": "HTML & CSS",
+    "title": "Design and Build Websites",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=HTML+%26+CSS"
+  },
+  {
+    "id": 4,
+    "name": "Python for Beginners",
+    "title": "Learn Python Programming",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=Python+Basics"
+  },
+  {
+    "id": 5,
+    "name": "React Basics",
+    "title": "Introduction to React.js",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=React+Basics"
+  },
+  {
+    "id": 6,
+    "name": "Node.js Guide",
+    "title": "Backend Development with Node.js",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=Node.js"
+  },
+  {
+    "id": 7,
+    "name": "MongoDB Basics",
+    "title": "NoSQL Database for Beginners",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=MongoDB"
+  },
+  {
+    "id": 8,
+    "name": "Data Structures",
+    "title": "Learn DSA with Java",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=Data+Structures"
+  },
+  {
+    "id": 9,
+    "name": "Git & GitHub",
+    "title": "Version Control Essentials",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=Git+%26+GitHub"
+  },
+  {
+    "id": 10,
+    "name": "Linux Basics",
+    "title": "Command Line for Beginners",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=Linux"
+  },
+  {
+    "id": 11,
+    "name": "C Programming",
+    "title": "Structured Programming Basics",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=C+Programming"
+  },
+  {
+    "id": 12,
+    "name": "Java Fundamentals",
+    "title": "Object-Oriented Programming",
+    "price": 0,
+    "category": "Free",
+    "image": "https://placehold.co/300x400?text=Java+OOP"
+  }
+]
