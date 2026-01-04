@@ -30,7 +30,6 @@ app.use(cors(
     methods: ["GET", "POST", "PUT", "DELETE"],
   }
 ));
-app.options("*", cors());
 
 app.use("/api/v1/book", bookRoute);
 app.use("/api/v1/admin", AdminRoute);
