@@ -25,10 +25,12 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors(
   {
-    origin: "https://book-store-two-rust.vercel.app",
+    origin: true,
+    credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   }
 ));
+app.options("*", cors());
 
 app.use("/api/v1/book", bookRoute);
 app.use("/api/v1/admin", AdminRoute);
