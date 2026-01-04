@@ -23,7 +23,12 @@ const PORT = process.env.PORT || 8087;
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
+app.use(cors(
+  {
+    origin: "https://book-store-two-rust.vercel.app/",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  }
+));
 
 app.use("/api/v1/book", bookRoute);
 app.use("/api/v1/admin", AdminRoute);
