@@ -31,11 +31,11 @@ app.use("/api/v1/users", userRoute);
 app.use("/api/v1/user/contact", contactRoute);
 app.get("/sendMail", sendMail);
 
-app.use(express.static(path.join(__dirname, "../client/dist../client/dist")));
+app.use(express.static(path.join(__dirname, "../../client/dist")));
 
 
 app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+  res.sendFile(path.join(__dirname, "../../client/dist/index.html"));
 });
 
 
