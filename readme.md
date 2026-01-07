@@ -1,6 +1,4 @@
-## <h1>Book Store</h1>
-
-## <h2>(MERN Stack Developer Assessment)<h2>
+## <h1>Book Store</h1> <h2>(MERN Stack Developer Assessment)<h2>
 
 ## 🔧 Installation (Run Locally)
 
@@ -53,11 +51,81 @@ This project demonstrates how to build and deploy a Rust-powered backend/fronten
 
 ## 📌 Features
 
-- 📝 List books
-- 🔍 Search books
-- ➕ Add new books
-- ✏️ Edit existing books
-- ❌ Delete books
-- (Add more features if you have them — e.g., search, pagination)
+User for
 
-## 🧱 Project Structure
+## 🧑‍💻 User Features
+
+- 📚 Browse Books
+
+Users can view all available books on the homepage.
+
+- 🔍 View Book Details
+
+Each book displays essential information such as title, author, and description.
+
+- 🛒 Easy Navigation
+
+Clean UI for smooth browsing experience.
+
+- ⚡ Fast Performance
+
+Optimized for quick loading and responsiveness.
+
+- 🌐 Accessible Online
+
+Users can access the store anytime via the live link.
+
+## 🔐 Admin Panel
+
+The Admin Panel is designed to manage the book store efficiently.
+Only authorized admins can access this section.
+
+## 👤 Admin Features
+
+- ➕ Add New Books
+
+Admin can add new books with details like title, author, price, and description.
+
+- ✏️ Update Book Details
+
+Edit existing book information anytime.
+
+- ❌ Delete Books
+
+Remove books that are out of stock or no longer available.
+
+- 📋 View All Books
+
+See the complete list of books in one place.
+
+- 🔒 Secure Access
+
+Admin functionalities are restricted from normal users.
+
+## 🧑‍💼 Admin Responsibilities
+
+- Maintain accurate book data
+
+- Ensure availability and correctness of listings
+
+- Manage the overall content of the store
+
+## ⚙️ Admin Workflow
+
+Admin logs in to the admin panel
+
+Navigates to the dashboard
+
+Performs CRUD operations (Create, Read, Update, Delete) on books
+
+Changes are reflected immediately on the user side
+
+## 🔮 Future Enhancements (Admin)
+
+- 🔐 Admin authentication & role-based access
+
+- 📊 Dashboard analytics (total books, sales, users)
+
+- 🧾 Order management
+
+- 👥 User management
