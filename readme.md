@@ -162,31 +162,30 @@ Admin functionalities are restricted from normal users.
 
 - 👥 User management
 
-🔄 Admin & User Flow (MERN Architecture)
+## 🔄 Admin & User Flow (MERN Architecture)
 
 This project follows a clear separation of concerns between Admin and User roles using the MERN stack.
 
-👤 User Flow (Client Side)
-🧑‍💻 User Journey
+## 👤 User Flow (Client Side)
 
-User visits the application
-👉 https://book-store-two-rust.vercel.app
+## 🧑‍💻 User Journey
 
 React frontend fetches book data from backend APIs
 
-User can:
+- User can:
 
-Browse all available books
+- Browse all available books
 
-View book details
+- View book details
 
-Navigate smoothly across pages
+- Navigate smoothly across pages
 
-Backend (Node + Express) handles requests and fetches data from MongoDB
+- Backend (Node + Express) handles requests and fetches data from MongoDB
 
-Data is returned as JSON and rendered dynamically in the UI
+- Data is returned as JSON and rendered dynamically in the UI
 
-🔁 User Flow Diagram (Text)
+## 🔁 User Flow Diagram (Text)
+
 User
 ↓
 React UI
@@ -216,17 +215,18 @@ Admin can perform CRUD operations:
 
 📋 View all books
 
-Each admin action:
+- Each admin action:
 
-Sends request to Express API
+- Sends request to Express API
 
-API validates request
+- API validates request
 
-MongoDB is updated accordingly
+- MongoDB is updated accordingly
 
-Updated data is reflected instantly on the User side
+- Updated data is reflected instantly on the User side
 
-🔁 Admin Flow Diagram (Text)
+## 🔁 Admin Flow Diagram (Text)
+
 Admin
 ↓
 Admin Dashboard (React)
@@ -235,44 +235,47 @@ Express API (Protected Routes)
 ↓
 MongoDB
 
-🛡 Role-Based Access Control (RBAC)
+## 🛡 Role-Based Access Control (RBAC)
 
-👤 Users
+## 👤 Users
 
-Read-only access
+- Read-only access
 
-Can view books only
+- Can view books only
 
-🔐 Admin
+## 🔐 Admin
 
-Full access (Create, Read, Update, Delete)
+- Full access (Create, Read, Update, Delete)
 
-Restricted routes handled via backend middleware
+- Restricted routes handled via backend middleware
 
-⚙️ API Responsibility
-Role API Access Description
-User GET Fetch books & details
-Admin POST Add new books
-Admin PUT Update book data
-Admin DELETE Remove books
-🧠 MERN Flow Summary
+## ⚙️ API Responsibility
 
-React → UI & user interactions
+| Role  | API Access | Description           |
+| ----- | ---------- | --------------------- |
+| User  | GET        | Fetch books & details |
+| Admin | POST       | Add new books         |
+| Admin | PUT        | Update book data      |
+| Admin | DELETE     | Remove books          |
 
-Express → REST APIs & routing
+## 🧠 MERN Flow Summary
 
-Node.js → Server environment
+- React → UI & user interactions
 
-MongoDB → Persistent data storage
+- Express → REST APIs & routing
+
+- Node.js → Server environment
+
+- MongoDB → Persistent data storage
 
 This separation ensures scalability, security, and maintainability.
 
-🔮 Future Improvements (Flow Level)
+## 🔮 Future Improvements (Flow Level)
 
-JWT-based authentication
+- JWT-based authentication
 
-Separate Admin & User dashboards
+- Separate Admin & User dashboards
 
-User accounts & order history
+- User accounts & order history
 
-Admin analytics panel
+- Admin analytics panel
