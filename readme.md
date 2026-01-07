@@ -1,4 +1,6 @@
-## <h1>📚 Book Store (MERN Stack Developer Assessmen) (Rust + Vercel)</h1>
+## <h1>📚 Book Store (MERN Stack Developer Assessment) </h1>
+
+## (Rust + Vercel)
 
 A simple **Book Store web application** built with **Rust** and deployed on **Vercel**.  
 This project demonstrates how to build and deploy a Rust-powered backend/frontend app on Vercel.
