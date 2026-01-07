@@ -47,6 +47,41 @@ This project demonstrates how to build and deploy a Rust-powered backend/fronten
    ```bash
     npm run dev
    ```
+   🧰 Tech Stack (MERN)
+
+This project is built using the MERN Stack, a popular full-stack JavaScript technology.
+
+🔹 Frontend
+
+React.js – User Interface
+
+HTML5 & CSS3 – Layout & styling
+
+JavaScript (ES6+) – Client-side logic
+
+🔹 Backend
+
+Node.js – Server environment
+
+Express.js – REST API development
+
+🔹 Database
+
+MongoDB – NoSQL database for storing book data
+
+🔹 Deployment
+
+Vercel + Render – Hosting and deployment platform
+
+🧠 MERN Architecture Overview
+
+React handles the user interface
+
+Express & Node.js manage the server and APIs
+
+MongoDB stores books and application data
+
+Vercel + Render handles CI/CD and live deployment
 
 ## 📌 Features
 
@@ -126,3 +161,118 @@ Admin functionalities are restricted from normal users.
 - 🧾 Order management
 
 - 👥 User management
+
+🔄 Admin & User Flow (MERN Architecture)
+
+This project follows a clear separation of concerns between Admin and User roles using the MERN stack.
+
+👤 User Flow (Client Side)
+🧑‍💻 User Journey
+
+User visits the application
+👉 https://book-store-two-rust.vercel.app
+
+React frontend fetches book data from backend APIs
+
+User can:
+
+Browse all available books
+
+View book details
+
+Navigate smoothly across pages
+
+Backend (Node + Express) handles requests and fetches data from MongoDB
+
+Data is returned as JSON and rendered dynamically in the UI
+
+🔁 User Flow Diagram (Text)
+User
+↓
+React UI
+↓
+Express API
+↓
+MongoDB
+↓
+Express API
+↓
+React UI
+
+🔐 Admin Flow (Management Side)
+🧑‍💼 Admin Journey
+
+Admin logs in to the Admin Panel
+
+Admin dashboard is loaded (React)
+
+Admin can perform CRUD operations:
+
+➕ Add new books
+
+✏️ Update book details
+
+❌ Delete books
+
+📋 View all books
+
+Each admin action:
+
+Sends request to Express API
+
+API validates request
+
+MongoDB is updated accordingly
+
+Updated data is reflected instantly on the User side
+
+🔁 Admin Flow Diagram (Text)
+Admin
+↓
+Admin Dashboard (React)
+↓
+Express API (Protected Routes)
+↓
+MongoDB
+
+🛡 Role-Based Access Control (RBAC)
+
+👤 Users
+
+Read-only access
+
+Can view books only
+
+🔐 Admin
+
+Full access (Create, Read, Update, Delete)
+
+Restricted routes handled via backend middleware
+
+⚙️ API Responsibility
+Role API Access Description
+User GET Fetch books & details
+Admin POST Add new books
+Admin PUT Update book data
+Admin DELETE Remove books
+🧠 MERN Flow Summary
+
+React → UI & user interactions
+
+Express → REST APIs & routing
+
+Node.js → Server environment
+
+MongoDB → Persistent data storage
+
+This separation ensures scalability, security, and maintainability.
+
+🔮 Future Improvements (Flow Level)
+
+JWT-based authentication
+
+Separate Admin & User dashboards
+
+User accounts & order history
+
+Admin analytics panel
