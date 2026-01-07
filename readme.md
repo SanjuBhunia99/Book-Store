@@ -1,8 +1,8 @@
 ## <h1>📚 Book Store (MERN Stack Developer Assessment) </h1>
 
-## (Rust + Vercel)
+## (Render + Vercel)
 
-A simple **Book Store web application** built with **Rust** and deployed on **Vercel**.  
+A simple **Book Store web application** built with **Render** and deployed on **Vercel**.  
 This project demonstrates how to build and deploy a Rust-powered backend/frontend app on Vercel.
 
 ## 🚀 Live Demo
@@ -11,10 +11,9 @@ This project demonstrates how to build and deploy a Rust-powered backend/fronten
 
 ## 🛠️ Tech Stack
 
-- 💻 **Rust** – backend logic & API
+- 💻 **Render** – backend logic & API
 - 🚀 **Vercel** – deployment platform
 - (Optionally list frontend framework if used, e.g., Yew, Leptos, or WASM)
-- Cargo for project management and building
 
 ## 🔧 Installation (Run Locally)
 
