@@ -1,4 +1,18 @@
-## <h1>Book Store</h1> <h2>(MERN Stack Developer Assessment)<h2>
+## <h1>📚 Book Store (MERN Stack Developer Assessmen) (Rust + Vercel)</h1>
+
+A simple **Book Store web application** built with **Rust** and deployed on **Vercel**.  
+This project demonstrates how to build and deploy a Rust-powered backend/frontend app on Vercel.
+
+## 🚀 Live Demo
+
+👉 https://book-store-two-rust.vercel.app
+
+## 🛠️ Tech Stack
+
+- 💻 **Rust** – backend logic & API
+- 🚀 **Vercel** – deployment platform
+- (Optionally list frontend framework if used, e.g., Yew, Leptos, or WASM)
+- Cargo for project management and building
 
 ## 🔧 Installation (Run Locally)
 
@@ -33,25 +47,7 @@
     npm run dev
    ```
 
-## <h1>📚 Book Store (Rust + Vercel)</h1>
-
-A simple **Book Store web application** built with **Rust** and deployed on **Vercel**.  
-This project demonstrates how to build and deploy a Rust-powered backend/frontend app on Vercel.
-
-## 🚀 Live Demo
-
-👉 https://book-store-two-rust.vercel.app
-
-## 🛠️ Tech Stack
-
-- 💻 **Rust** – backend logic & API
-- 🚀 **Vercel** – deployment platform
-- (Optionally list frontend framework if used, e.g., Yew, Leptos, or WASM)
-- Cargo for project management and building
-
 ## 📌 Features
-
-User for
 
 ## 🧑‍💻 User Features
 
@@ -112,13 +108,13 @@ Admin functionalities are restricted from normal users.
 
 ## ⚙️ Admin Workflow
 
-Admin logs in to the admin panel
+- Admin logs in to the admin panel
 
-Navigates to the dashboard
+- Navigates to the dashboard
 
-Performs CRUD operations (Create, Read, Update, Delete) on books
+- Performs CRUD operations (Create, Read, Update, Delete) on books
 
-Changes are reflected immediately on the user side
+- Changes are reflected immediately on the user side
 
 ## 🔮 Future Enhancements (Admin)
 
