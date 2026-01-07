@@ -51,54 +51,12 @@ Vercel + Render – Hosting and deployment platform
 
 ## 📌 Features
 
-## 🧑‍💻 User Features
-
-- 📚 Browse Books
-
-Users can view all available books on the homepage.
-
-- 🔍 View Book Details
-
-Each book displays essential information such as title, author, and description.
-
-- 🛒 Easy Navigation
-
-Clean UI for smooth browsing experience.
-
-- ⚡ Fast Performance
-
-Optimized for quick loading and responsiveness.
-
-- 🌐 Accessible Online
-
-Users can access the store anytime via the live link.
-
 ## 🔐 Admin Panel
 
 The Admin Panel is designed to manage the book store efficiently.
 Only authorized admins can access this section.
 
 ## 👤 Admin Features
-
-- ➕ Add New Books
-
-Admin can add new books with details like title, author, price, and description.
-
-- ✏️ Update Book Details
-
-Edit existing book information anytime.
-
-- ❌ Delete Books
-
-Remove books that are out of stock or no longer available.
-
-- 📋 View All Books
-
-See the complete list of books in one place.
-
-- 🔒 Secure Access
-
-Admin functionalities are restricted from normal users.
 
 ## 🧑‍💼 Admin Responsibilities
 
@@ -164,12 +122,13 @@ Express API
 ↓
 React UI
 
-🔐 Admin Flow (Management Side)
-🧑‍💼 Admin Journey
+## 🔐 Admin Flow (Management Side)
 
-Admin logs in to the Admin Panel
+# 🧑‍💼 Admin Journey
 
-Admin dashboard is loaded (React)
+- Admin logs in to the Admin Panel
+
+- Admin dashboard is loaded (React)
 
 Admin can perform CRUD operations:
 
@@ -181,7 +140,7 @@ Admin can perform CRUD operations:
 
 📋 View all books
 
-- Each admin action:
+Each admin action:
 
 - Sends request to Express API
 
@@ -203,15 +162,50 @@ MongoDB
 
 ## 🛡 Role-Based Access Control (RBAC)
 
-## 👤 Users
+## 🧑‍💻 Users
 
-- Read-only access
+- 📚 Browse Books
 
-- Can view books only
+Users can view all available books on the homepage.
+
+- 🔍 View Book Details
+
+Each book displays essential information such as title, author, and description.
+
+- 🛒 Easy Navigation
+
+Clean UI for smooth browsing experience.
+
+- ⚡ Fast Performance
+
+Optimized for quick loading and responsiveness.
+
+- 🌐 Accessible Online
+
+Users can access the store anytime via the live link.
 
 ## 🔐 Admin
 
 - Full access (Create, Read, Update, Delete)
+- ➕ Add New Books
+
+Admin can add new books with details like title, author, price, and description.
+
+- ✏️ Update Book Details
+
+Edit existing book information anytime.
+
+- ❌ Delete Books
+
+Remove books that are out of stock or no longer available.
+
+- 📋 View All Books
+
+See the complete list of books in one place.
+
+- 🔒 Secure Access
+
+Admin functionalities are restricted from normal users.
 
 - Restricted routes handled via backend middleware
 
