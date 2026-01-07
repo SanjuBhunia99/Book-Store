@@ -1,13 +1,7 @@
 ## <h1>📚 Book Store (MERN Stack Developer Assessment) </h1>
 
-## (Render + Vercel)
-
 A simple **Book Store web application** built with **Render** and deployed on **Vercel**.  
-This project demonstrates how to build and deploy a Rust-powered backend/frontend app on Vercel.
-
-## 🚀 Live Demo
-
-👉 https://book-store-two-rust.vercel.app
+This project demonstrates how to build and deploy a Rust-powered backend/frontend app on Verce
 
 ## 🛠️ Tech Stack
 
@@ -15,73 +9,45 @@ This project demonstrates how to build and deploy a Rust-powered backend/fronten
 - 🚀 **Vercel** – deployment platform
 - (Optionally list frontend framework if used, e.g., Yew, Leptos, or WASM)
 
-## 🔧 Installation (Run Locally)
+# 🚀 Live Demo
 
-1. **Clone the repo**
+👉 https://book-store-two-rust.vercel.app
 
-   ```bash
-   git clone [paste-the-git-repository-link-here]
-
-   cd [put-the-repository-name-here]
-
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   npm install
-
-   ```
-
-3. **Client run command**
-
-   ```bash
-   npm run build
-
-   ```
-
-4. **Open in browser**
-   http://localhost:3000
-
-5. **Server run command**
-   ```bash
-    npm run dev
-   ```
-   🧰 Tech Stack (MERN)
+## 🧰 Tech Stack (MERN)
 
 This project is built using the MERN Stack, a popular full-stack JavaScript technology.
 
-🔹 Frontend
+# 🔹 Frontend
 
-React.js – User Interface
+- React.js – User Interface
 
-HTML5 & CSS3 – Layout & styling
+- HTML5 & TCSS & DaisyUI – Layout & styling
 
-JavaScript (ES6+) – Client-side logic
+- JavaScript (ES6+) – Client-side logic
 
-🔹 Backend
+# 🔹 Backend
 
-Node.js – Server environment
+- Node.js – Server environment
 
-Express.js – REST API development
+- Express.js – REST API development
 
-🔹 Database
+# 🔹 Database
 
-MongoDB – NoSQL database for storing book data
+- MongoDB – NoSQL database for storing book data
 
-🔹 Deployment
+# 🔹 Deployment
 
 Vercel + Render – Hosting and deployment platform
 
-🧠 MERN Architecture Overview
+## 🧠 MERN Architecture Overview
 
-React handles the user interface
+- React handles the user interface
 
-Express & Node.js manage the server and APIs
+- Express & Node.js manage the server and APIs
 
-MongoDB stores books and application data
+- MongoDB stores books and application data
 
-Vercel + Render handles CI/CD and live deployment
+- Vercel + Render handles CI/CD and live deployment
 
 ## 📌 Features
 
@@ -279,3 +245,36 @@ This separation ensures scalability, security, and maintainability.
 - User accounts & order history
 
 - Admin analytics panel
+
+## 🔧 Installation (Run Locally)
+
+1. **Clone the repo**
+
+   ```bash
+   git clone [paste-the-git-repository-link-here]
+
+   cd [put-the-repository-name-here]
+
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+
+   ```
+
+3. **Client run command**
+
+   ```bash
+   npm run build
+
+   ```
+
+4. **Open in browser**
+   http://localhost:3000
+
+5. **Server run command**
+   ```bash
+    npm run dev
+   ```
