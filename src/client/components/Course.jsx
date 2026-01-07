@@ -19,7 +19,6 @@ const Course = () => {
             page,
           },
         });
-        // console.log(res.data);
         setTotalPage(res.data.totalPages);
         setPage(res.data.currentPage);
         setBooks(res.data.books);
