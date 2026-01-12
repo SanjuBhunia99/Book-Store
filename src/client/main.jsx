@@ -15,6 +15,7 @@ import About from "./components/About.jsx";
 import { AuthProvider } from "./hooks/useAuth.jsx";
 import AdminContact from "./page/AdminContact.jsx";
 import { CartProvider } from "./context/CartContext";
+import CartPage from "./context/CartPage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
       { path: "/dashboard", element: <Dashboard /> },
       { path: "/about", element: <About /> },
       { path: "/admin/contact", element: <AdminContact /> },
+      { path: "/cart", element: <CartPage /> },
     ],
   },
 ]);

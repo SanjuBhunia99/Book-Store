@@ -142,7 +142,7 @@ const Navbar = () => {
                 />
               </label>
             </div>
-            <div className="flex-none">
+            {/* <div className="flex-none">
               <Link to="/cart" className="relative">
                 🛒
                 {cartItems.length > 0 && (
@@ -151,7 +151,7 @@ const Navbar = () => {
                   </span>
                 )}
               </Link>
-            </div>
+            </div> */}
             <div className="">
               {isLoggedIn ? (
                 <GrLogout

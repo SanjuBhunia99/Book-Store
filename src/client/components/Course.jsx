@@ -77,13 +77,12 @@ const Course = () => {
           <button
             disabled={page === 1}
             onClick={onPrevClick}
-            className="flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base font-medium rounded-md sm:rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200 min-w-22.5
-    "
+            className=" flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base font-medium rounded-md sm:rounded-lg bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200 min-w-22.5"
           >
             ← <span className="hidden sm:inline ml-1">Previous</span>
           </button>
           <span className="text-sm sm:text-base font-medium text-gray-600">
-            Page <span className="text-gray-900">{page}</span>/ {totalPage}
+            Page <span className="text-gray-900">{page}</span>... {totalPage}
           </span>
           <button
             disabled={page === totalPage}
