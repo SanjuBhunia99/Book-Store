@@ -118,7 +118,7 @@ const Course = () => {
       hover:bg-gray-300
       disabled:opacity-40 disabled:cursor-not-allowed
       transition-all duration-200
-      min-w-[90px]
+      min-w-22.5
     "
           >
             ← <span className="hidden sm:inline ml-1">Previous</span>
