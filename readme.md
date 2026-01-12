@@ -264,10 +264,7 @@ This separation ensures scalability, security, and maintainability.
 
    ```
 
-4. **Open in browser**
-   http://localhost:3000
-
-5. **Server run command**
+4. **Server run command**
    ```bash
     npm run dev
    ```
