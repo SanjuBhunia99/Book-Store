@@ -106,13 +106,3 @@ const Course = () => {
 };
 
 export default Course;
-
-// <div className="mt-8 flex justify-center">
-//   <input
-//     type="text"
-//     placeholder="Search books..."
-//     value={search}
-//     onChange={(e) => setSearch(e.target.value)}
-//     className="w-full sm:w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
-//   />
-// </div>

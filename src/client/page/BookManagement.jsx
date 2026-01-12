@@ -291,20 +291,23 @@ const BookManagement = () => {
               )}
             </tbody>
           </table>
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center items-center mt-6 gap-3 sm:gap-4">
             <button
               disabled={page === 1}
               onClick={onPrevClick}
-              className="cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+              className=" flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base font-medium rounded-md sm:rounded-lg bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200 min-w-22.5"
             >
-              Previous
+              ← <span className="hidden sm:inline ml-1">Previous</span>
             </button>
+            <span className="text-sm sm:text-base font-medium text-gray-600">
+              Page <span className="text-gray-900">{page}</span>... {totalPage}
+            </span>
             <button
               disabled={page === totalPage}
               onClick={onNextClick}
-              className="cursor-pointer disabled:opacity-50 ml-2"
+              className=" flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2.5 text-sm sm:text-base font-medium rounded-md sm:rounded-lg bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200 min-w-22.5"
             >
-              Next
+              <span className="hidden sm:inline mr-1">Next</span> →
             </button>
           </div>
         </div>
