@@ -7,7 +7,6 @@ This project demonstrates how to build and deploy a Rust-powered backend/fronten
 
 - 💻 **Render** – backend logic & API
 - 🚀 **Vercel** – deployment platform
-- (Optionally list frontend framework if used, e.g., Yew, Leptos, or WASM)
 
 # 🚀 Live Demo
 
