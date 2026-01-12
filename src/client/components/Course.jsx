@@ -73,7 +73,39 @@ const Course = () => {
             <p className="text-center col-span-4">No books found</p>
           )}
         </div>
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center items-center mt-6 gap-3">
+          <button
+            disabled={page === 1}
+            onClick={onPrevClick}
+            className="
+      px-4 py-2 rounded-lg font-medium
+      bg-gray-200 text-gray-700
+      hover:bg-gray-300
+      disabled:opacity-50 disabled:cursor-not-allowed
+      disabled:hover:bg-gray-200
+      transition-all duration-200
+    "
+          >
+            ← Previous
+          </button>
+
+          <button
+            disabled={page === totalPage}
+            onClick={onNextClick}
+            className="
+      px-4 py-2 rounded-lg font-medium
+      bg-blue-500 text-white
+      hover:bg-blue-600
+      disabled:opacity-50 disabled:cursor-not-allowed
+      disabled:hover:bg-blue-500
+      transition-all duration-200
+    "
+          >
+            Next →
+          </button>
+        </div>
+
+        {/* <div className="flex justify-center mt-4">
           <button
             disabled={page === 1}
             onClick={onPrevClick}
@@ -88,7 +120,7 @@ const Course = () => {
           >
             Next
           </button>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </>
