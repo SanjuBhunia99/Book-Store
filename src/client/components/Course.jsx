@@ -134,7 +134,7 @@ const Course = () => {
         });
 
         setBooks(res.data.books);
-        setFilteredBooks(res.data.books); // ✅ important
+        setFilteredBooks(res.data.books);
         setTotalPage(res.data.totalPages);
         setPage(res.data.currentPage);
         setLoading(false);
@@ -146,8 +146,6 @@ const Course = () => {
 
     fetchBooks();
   }, [page]);
-
-  // 🔍 Search filter
   useEffect(() => {
     const result = books.filter((item) =>
       item.title?.toLowerCase().includes(search.toLowerCase())
@@ -170,8 +168,6 @@ const Course = () => {
   return (
     <>
       <Navbar />
-
-      {/* ✅ Responsive padding fix */}
       <div className="max-w-screen-2xl container mx-auto px-4 sm:px-6 md:px-20">
         <div className="mt-20 text-center">
           <h1 className="text-xl sm:text-2xl md:text-4xl">
@@ -190,8 +186,6 @@ const Course = () => {
             </button>
           </Link>
         </div>
-
-        {/* 🔍 Search input */}
         <div className="mt-8 flex justify-center">
           <input
             type="text"
@@ -201,8 +195,6 @@ const Course = () => {
             className="w-full sm:w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
           />
         </div>
-
-        {/* 📚 Books */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {loading ? (
             <p className="text-center col-span-4">Loading books...</p>
@@ -212,8 +204,6 @@ const Course = () => {
             <p className="text-center col-span-4">No books found</p>
           )}
         </div>
-
-        {/* Pagination */}
         <div className="flex justify-center items-center mt-6 gap-3 sm:gap-4">
           <button
             disabled={page === 1}
@@ -222,11 +212,9 @@ const Course = () => {
           >
             ← <span className="hidden sm:inline ml-1">Previous</span>
           </button>
-
           <span className="text-sm sm:text-base font-medium text-gray-600">
             Page <span className="text-gray-900">{page}</span> / {totalPage}
           </span>
-
           <button
             disabled={page === totalPage}
             onClick={onNextClick}
