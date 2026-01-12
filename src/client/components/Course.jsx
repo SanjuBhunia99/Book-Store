@@ -11,6 +11,7 @@ const Course = () => {
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [totalPage, setTotalPage] = useState(1);
+  const [search, setSearch] = useState("");
   useEffect(() => {
     const fetchBooks = async () => {
       try {
@@ -33,10 +34,11 @@ const Course = () => {
   }, [page]);
   useEffect(() => {
     const result = books.filter((item) =>
-      item.title.toLowerCase().includes(search.toLowerCase())
+      item.title?.toLowerCase().includes(search.toLowerCase())
     );
     setFilteredBooks(result);
   }, [search, books]);
+
   const onNextClick = () => {
     if (page < totalPage) {
       setPage(page + 1);
