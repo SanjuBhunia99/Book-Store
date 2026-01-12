@@ -7,7 +7,6 @@ This project demonstrates how to build and deploy a Rust-powered backend/fronten
 
 - 💻 **Render** – backend logic & API
 - 🚀 **Vercel** – deployment platform
-- (Optionally list frontend framework if used, e.g., Yew, Leptos, or WASM)
 
 # 🚀 Live Demo
 
@@ -265,10 +264,7 @@ This separation ensures scalability, security, and maintainability.
 
    ```
 
-4. **Open in browser**
-   http://localhost:3000
-
-5. **Server run command**
+4. **Server run command**
    ```bash
     npm run dev
    ```
