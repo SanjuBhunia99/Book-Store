@@ -55,7 +55,7 @@ const Navbar = () => {
         to="/about"
         className={({ isActive }) => (isActive ? activeClass : notActiveClass)}
       >
-        About
+        {/* About */}
       </NavLink>
     </nav>
   );
