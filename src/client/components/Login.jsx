@@ -14,7 +14,7 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  // modal close
+
   const handleLogin = () => {
     document.getElementById("my_modal_3")?.close();
   };

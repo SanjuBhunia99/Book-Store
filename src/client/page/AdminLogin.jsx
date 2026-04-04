@@ -5,7 +5,7 @@ import { useAuth } from "../hooks/useAuth";
 
 export default function Adminlogin() {
   const navigate = useNavigate();
-  const { adminLogin } = useAuth(); //  from AuthContext
+  const { adminLogin } = useAuth(); 
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -23,7 +23,7 @@ export default function Adminlogin() {
     setLoading(true);
 
     try {
-      //  call useAuth adminLogin
+      
       await adminLogin({ email, password });
 
       alert("Admin Login Successful");

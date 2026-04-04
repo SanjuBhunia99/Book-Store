@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
     try {
       const decoded = jwtDecode(token);
 
-      // role check
+
       if (decoded.role === "admin") {
         setAdmin(decoded);
         setUser(null);
@@ -34,7 +34,6 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // refresh token (user only)
   useEffect(() => {
     (async () => {
       try {
@@ -52,7 +51,6 @@ export const AuthProvider = ({ children }) => {
     })();
   }, []);
 
-  //  USER REGISTER
   const register = async (payload) => {
     const { data } = await api.post("/api/v1/users/register", payload);
     setAccessToken(data.token);
@@ -60,7 +58,7 @@ export const AuthProvider = ({ children }) => {
     return data;
   };
 
-  // USER LOGIN
+ 
   const login = async (payload) => {
     const { data } = await api.post("/api/v1/users/login", payload);
     setAccessToken(data.token);
@@ -68,7 +66,6 @@ export const AuthProvider = ({ children }) => {
     return data;
   };
 
-  // ADMIN LOGIN 
   const adminLogin = async (payload) => {
     const { data } = await api.post("/api/v1/admin/login", payload);
     setAccessToken(data.token);
@@ -76,7 +73,7 @@ export const AuthProvider = ({ children }) => {
     return data;
   };
 
-  // LOGOUT (both)
+
   const logout = async () => {
     try {
       await api.get("/api/v1/user/logout", { withCredentials: true });
@@ -94,10 +91,10 @@ export const AuthProvider = ({ children }) => {
         user,
         admin,
         isLoggedIn: !!user,
-        isAdmin: !!admin, //  admin flag
+        isAdmin: !!admin, 
         register,
         login,
-        adminLogin, //  exposed
+        adminLogin, 
         logout,
         loading,
       }}

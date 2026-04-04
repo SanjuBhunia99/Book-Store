@@ -10,7 +10,7 @@ const sendMail = async ({ to, subject, text }) => {
       },
     });
 
-    // optional but helpful
+
     await transporter.verify();
 
     const mailOptions = {

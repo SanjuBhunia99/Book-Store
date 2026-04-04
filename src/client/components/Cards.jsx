@@ -20,7 +20,7 @@ const Cards = ({ item }) => {
         className="h-36 sm:h-40 md:h-44 w-full object-cover rounded"
       />
 
-      {/* Text */}
+   
       <h2 className="mt-2 font-bold text-base sm:text-lg">{item.name}</h2>
 
       <p className="text-xs sm:text-sm text-gray-600">{item.title}</p>
@@ -33,7 +33,6 @@ const Cards = ({ item }) => {
         {item.category}
       </span>
 
-      {/* Button */}
       <div className="mt-3">
         <button
           onClick={() => addToCart(item)}
