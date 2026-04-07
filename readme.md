@@ -244,7 +244,7 @@ This separation ensures scalability, security, and maintainability.
 1. **Clone the repo**
 
    ```bash
-   git clone [paste-the-git-repository-link-here]
+   git clone [https://github.com/SanjuBhunia99/Book-Store]
 
    cd [put-the-repository-name-here]
 
